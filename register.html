@@ -15,7 +15,7 @@
             <div class="col-md-6 offset-md-3">
                 <div class="login-form">
                     <h2 class="text-center mb-4">Login</h2>
-                    <form method="post" id = "login_info" action="/dashboard/cps406_bug_report/database/check.php">
+                    <form method="post" id = "login_info" action="/dashboard/cps406_bug_report/database/index.php">
                         <div class="mb-3" >
                             <label for="username" class="form-label">Username</label>
                             <input type="text" class="form-control" id="username" name="username" required>
@@ -24,9 +24,14 @@
                             <label for="password" class="form-label">Password</label>
                             <input type="password" class="form-control" id="password" name="password" required>
                         </div>
+                        <div class="mb-3">
+                            <label for="Email" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="email" name="email" required>
+                        </div>
                         <div class="d-grid">
-                            <button type="submit" class="btn btn-primary btn-block">Login</button>
-                            <button type="button" class="btn btn-block register" onclick="changePage()">Register</button>
+                            <button type="reset" class="btn btn-danger">Clear</button>
+                            <button type="submit" class="btn btn-block register">Sign Up</button>
+                            <a href="index.html" class ="btn m-5 btn-primary"> login?</a>
                         </div>
                     </form>
                 </div>
